@@ -1,0 +1,30 @@
+  
+server:
+  port: 8080
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://192.168.0.188:9411/
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://192.168.0.188:3306/clickerclass_user?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: m22102013M..
+    initialization-mode: always
+    platform: mysql
+  application:
+    name: user
+gema:
+  kafka:
+    producer:
+      enabled: true
+      bootstrap-server: htpp://192.168.0.188:29092
+    consumer:
+      enabled: true
+      bootstrap-server: htpp://192.168.0.188:29092
+      
+dividing-factor: 1000
