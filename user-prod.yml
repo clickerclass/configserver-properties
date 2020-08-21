@@ -12,7 +12,7 @@ spring:
       ddl-auto: update
   datasource:
     url: jdbc:mysql://192.168.0.188:3306/clickerclass_user?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
+    username: clickerclass
     password: m22102013M..
     initialization-mode: always
     platform: mysql
